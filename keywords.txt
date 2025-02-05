@@ -89,6 +89,7 @@ setDacLeftDigitalVolumeDB	KEYWORD2
 setDacRightDigitalVolumeDB	KEYWORD2	
 enableDacMute	KEYWORD2
 disableDacMute	KEYWORD2
+setDacDeEmphasis	KEYWORD2
 enable3d	KEYWORD2
 disable3d	KEYWORD2
 set3dDepth	KEYWORD2

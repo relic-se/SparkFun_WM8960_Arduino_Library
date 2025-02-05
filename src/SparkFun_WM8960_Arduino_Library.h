@@ -326,6 +326,12 @@
 #define WM8960_JACKDETECT_LINPUT3 1
 #define WM8960_JACKDETECT_RINPUT3 2
 
+// De-Emphasis settings
+#define WM8960_DEEMPH_NONE 0
+#define WM8960_DEEMPH_32K 1
+#define WM8960_DEEMPH_44_1K 2
+#define WM8960_DEEMPH_48K 3
+
 class WM8960
 {
 	public:
@@ -559,7 +565,8 @@ class WM8960
 		boolean enableDacMute();
 		boolean disableDacMute();
 
-		// DE-Emphasis
+		// DAC De-Emphasis
+		boolean setDacDeEmphasis(uint8_t setting);
 
 		// 3D Stereo Enhancement
 		// 3D enable/disable
