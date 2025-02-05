@@ -89,6 +89,10 @@ setDacLeftDigitalVolumeDB	KEYWORD2
 setDacRightDigitalVolumeDB	KEYWORD2	
 enableDacMute	KEYWORD2
 disableDacMute	KEYWORD2
+enableDacSoftMute	KEYWORD2
+disableDacSoftMute	KEYWORD2
+enableDacSlowSoftMute	KEYWORD2
+disableDacSlowSoftMute	KEYWORD2
 setDacDeEmphasis	KEYWORD2
 enableDacSlopingStopbandFilter	KEYWORD2
 disableDacSlopingStopbandFilter	KEYWORD2

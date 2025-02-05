@@ -806,6 +806,26 @@ boolean WM8960::disableDacMute()
   return WM8960::_writeRegisterBit(WM8960_REG_ADC_DAC_CTRL_1, 3, 0);
 }
 
+boolean WM8960::enableDacSoftMute()
+{
+  return WM8960::_writeRegisterBit(WM8960_REG_ADC_DAC_CTRL_2, 3, 1);
+}
+
+boolean WM8960::disableDacSoftMute()
+{
+  return WM8960::_writeRegisterBit(WM8960_REG_ADC_DAC_CTRL_2, 3, 0);
+}
+
+boolean WM8960::enableDacSlowSoftMute()
+{
+  return WM8960::_writeRegisterBit(WM8960_REG_ADC_DAC_CTRL_2, 2, 1);
+}
+
+boolean WM8960::disableDacSlowSoftMute()
+{
+  return WM8960::_writeRegisterBit(WM8960_REG_ADC_DAC_CTRL_2, 2, 0);
+}
+
 // DAC De-Emphasis
 boolean WM8960::setDacDeEmphasis(uint8_t setting) {
   return WM8960::_writeRegisterMultiBits(WM8960_REG_ADC_DAC_CTRL_1, 2, 1, setting);

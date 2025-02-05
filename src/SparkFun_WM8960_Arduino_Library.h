@@ -564,6 +564,10 @@ class WM8960
 		// DAC mute
 		boolean enableDacMute();
 		boolean disableDacMute();
+		boolean enableDacSoftMute();
+		boolean disableDacSoftMute();
+		boolean enableDacSlowSoftMute();
+		boolean disableDacSlowSoftMute();
 
 		// DAC De-Emphasis
 		boolean setDacDeEmphasis(uint8_t setting);
