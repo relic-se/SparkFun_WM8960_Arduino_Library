@@ -568,6 +568,10 @@ class WM8960
 		// DAC De-Emphasis
 		boolean setDacDeEmphasis(uint8_t setting);
 
+		// DAC Filter
+		boolean enableDacSlopingStopbandFilter();
+		boolean disableDacSlopingStopbandFilter();
+
 		// 3D Stereo Enhancement
 		// 3D enable/disable
 		boolean enable3d();

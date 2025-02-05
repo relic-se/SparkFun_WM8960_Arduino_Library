@@ -811,6 +811,15 @@ boolean WM8960::setDacDeEmphasis(uint8_t setting) {
   return WM8960::_writeRegisterMultiBits(WM8960_REG_ADC_DAC_CTRL_1, 2, 1, setting);
 }
 
+// DAC Filter
+boolean WM8960::enableDacSlopingStopbandFilter() {
+  return WM8960::_writeRegisterBit(WM8960_REG_ADC_DAC_CTRL_2, 1, 1);
+}
+
+boolean WM8960::disableDacSlopingStopbandFilter() {
+  return WM8960::_writeRegisterBit(WM8960_REG_ADC_DAC_CTRL_2, 1, 0);
+}
+
 // 3D Stereo Enhancement
 // 3D enable/disable
 boolean WM8960::enable3d()

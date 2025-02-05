@@ -90,6 +90,8 @@ setDacRightDigitalVolumeDB	KEYWORD2
 enableDacMute	KEYWORD2
 disableDacMute	KEYWORD2
 setDacDeEmphasis	KEYWORD2
+enableDacSlopingStopbandFilter	KEYWORD2
+disableDacSlopingStopbandFilter	KEYWORD2
 enable3d	KEYWORD2
 disable3d	KEYWORD2
 set3dDepth	KEYWORD2
@@ -388,7 +390,11 @@ WM8960_VMIDSEL_2X50KOHM	LITERAL1
 WM8960_VMIDSEL_2X250KOHM	LITERAL1
 WM8960_VMIDSEL_2X5KOHM	LITERAL1
 
+WM8960_DEEMPH_NONE	LITERAL1
+WM8960_DEEMPH_32K	LITERAL1
+WM8960_DEEMPH_44_1K	LITERAL1
+WM8960_DEEMPH_48K	LITERAL1
+
 #######################################
 # Instances (KEYWORD3)
 #######################################
-
